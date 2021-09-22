@@ -16,11 +16,11 @@ spec:
         image:
           tag: latest
         ingress:
-          host: devopsparadox.com
+          host: devops-paradox.192.168.99.125.xip.io
       version: v3
   destination:
     namespace: production
-    server: devops-paradox.192.168.99.125.xip.io
+    server: https://kubernetes.default.svc
   syncPolicy:
     automated:
       selfHeal: true
