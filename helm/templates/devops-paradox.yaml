@@ -9,14 +9,14 @@ spec:
   project: default
   source:
     path: helm
-    repoURL: https://github.com/spluess/devops-paradox.git
+    repoURL: https://github.com/vfarcic/devops-paradox.git
     targetRevision: HEAD
     helm:
       values: |
         image:
           tag: latest
         ingress:
-          host: devops-paradox.192.168.99.125.xip.io
+          host: devops-paradox.192.168.99.126.xip.io
       version: v3
   destination:
     namespace: production
